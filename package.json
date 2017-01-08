@@ -8,13 +8,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git", 
+    "type": "git",
     "url": "https://github.com/tamano/electron-clipboard-memo.git"
-  }, 
+  },
   "keywords": [],
   "author": "",
-  "license": "MIT", 
+  "license": "MIT",
   "dependencies": {
-    "electron": "^1.4.13"
+    "electron": "^1.4.13",
+    "photon": "git+https://github.com/connors/photon.git"
   }
 }
