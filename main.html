@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="node_modules/photon/dist/css/photon.css">
+
+    <title>index</title>
+  </head>
+  <body>
+    <div class="window">
+      <header class="toolbar toolbar-header">
+        <h1 class="title" style="-webkit-app-region: drag">Header</h1>
+
+        <div class="toolbar-actions">
+          <div class="btn-group">
+            <button class="btn btn-default">
+              <span class="icon icon-home"></span>
+            </button>
+            <button class="btn btn-default">
+              <span class="icon icon-folder"></span>
+            </button>
+            <button class="btn btn-default active">
+              <span class="icon icon-cloud"></span>
+            </button>
+            <button class="btn btn-default">
+              <span class="icon icon-popup"></span>
+            </button>
+            <button class="btn btn-default">
+              <span class="icon icon-shuffle"></span>
+            </button>
+          </div>
+
+          <button class="btn btn-default">
+            <span class="icon icon-home icon-text"></span>
+            Filters
+          </button>
+
+          <button class="btn btn-default btn-dropdown pull-right">
+            <span class="icon icon-megaphone"></span>
+          </button>
+        </div>
+      </header>
+
+      <div class="window-content">
+        <div class="pane-group">
+          <div class="pane-sm sidebar">
+            <ul class="list-group">
+              <li class="list-group-header">
+                <input class="form-control" type="text" placeholder="Search for someone">
+              </li>
+              <li class="list-group-item">
+                <img class="img-circle media-object pull-left" src="/assets/img/avatar.jpg" width="32" height="32">
+                <div class="media-body">
+                  <strong>List item title</strong>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <img class="img-circle media-object pull-left" src="/assets/img/avatar.png" width="32" height="32">
+                <div class="media-body">
+                  <strong>List item title</strong>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div id="editor" class="pane"></div>
+        </div>
+      </div>
+
+      <footer class="toolbar toolbar-footer">
+        <div class="toolbar-actions">
+          <button class="btn btn-default">
+            Cancel
+          </button>
+
+          <button class="btn btn-primary pull-right">
+            Save
+          </button>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

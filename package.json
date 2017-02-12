@@ -2,19 +2,21 @@
   "name": "electron-clipboard-memo",
   "version": "1.0.0",
   "description": "Sample project for training",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "electron index.js",
+    "start": "electron app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git", 
+    "type": "git",
     "url": "https://github.com/tamano/electron-clipboard-memo.git"
-  }, 
+  },
   "keywords": [],
   "author": "",
-  "license": "MIT", 
+  "license": "MIT",
   "dependencies": {
-    "electron": "^1.4.13"
+    "ace-min-noconflict": "^1.1.9",
+    "electron": "^1.4.13",
+    "photon": "git+https://github.com/connors/photon.git"
   }
 }
