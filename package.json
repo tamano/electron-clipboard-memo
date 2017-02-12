@@ -2,9 +2,9 @@
   "name": "electron-clipboard-memo",
   "version": "1.0.0",
   "description": "Sample project for training",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "electron index.js",
+    "start": "electron app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
