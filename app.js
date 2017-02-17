@@ -16,4 +16,26 @@ app.on('ready', function() {
   mainWindow.on('closed', function() {
     mainWindow = null;
   });
+
+  // タスクトレイに格納
+  var Menu = electron.Menu;
+  var Tray = electron.Tray;
+
+  var trayIcon = new Tray(__dirname + "/icon.png");
+
+  // タスクトレイに右クリックメニューを追加
+  var contextMenu = Menu.buildFromTemplate([
+      { label: "表示", click: function () { mainWindow.show(); } },
+      { label: "非表示", click: function () { mainWindow.hide(); } },
+      { label: "終了", click: function () { mainWindow.close(); } }
+  ]);
+  trayIcon.setContextMenu(contextMenu);
+
+  // タスクトレイのツールチップをアプリ名に
+  trayIcon.setToolTip(app.getName());
+
+  // タスクトレイが左クリックされた場合、アプリのウィンドウをアクティブに
+  trayIcon.on("clicked", function () {
+      mainWindow.focus();
+  });
 });
