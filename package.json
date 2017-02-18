@@ -2,9 +2,9 @@
   "name": "electron-clipboard-memo",
   "version": "1.0.0",
   "description": "Sample project for training",
-  "main": "app.js",
+  "main": "app/app.js",
   "scripts": {
-    "start": "electron app.js",
+    "start": "electron app/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +18,8 @@
     "ace-min-noconflict": "^1.1.9",
     "electron": "^1.4.13",
     "photon": "git+https://github.com/connors/photon.git"
+  },
+  "devDependencies": {
+    "electron-packager": "^8.5.1"
   }
 }
